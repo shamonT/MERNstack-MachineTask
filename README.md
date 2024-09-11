@@ -1,22 +1,22 @@
-<<<<<<< HEAD
+<
 ## Project Overview
 
-The task involves developing a web application that allows users to browse through a list of products categorized by various parameters. Users should have the capability to sort and filter products based on criteria such as categories, price range, gender, occasion, and discount. Furthermore, the application should empower users to seamlessly edit and delete their selected products, with these modifications being promptly reflected in the user interface.
+The task involves developing Features such as adding and editing of product,sorting ,filtering and the pagination in the product page.
 
 ## Github Repo:
 
-https://github.com/enacton-tech/mern-stack-task
+https://github.com/shamonT/MERNstack-MachineTask.git
 
 ### Video Explanation
 
-https://app.usebubbles.com/kG9NjR5kqBCssXm1yA5dZt/mernstack-interview-task-walkthrough
+https://www.loom.com/share/e926c9016f404ac19c5e01f02c22da80?sid=9fc3966a-0800-4464-88c3-23132038952e
 
 ### Setting Up the Project
 
 To set up the project locally, follow these steps:
 
 1. Clone the repository and navigate to the project folder.
-2. Import the product_database.sql file in to your MySQL database (you can use phpMyAdmin).
+2. Import the product_database.sql file in to your MySQL database (you can use commandprompt).
 3. Update the .env file with your own MySQL credentials.
 4. Run `npm install --force`.
 5. Start the project using `npm run dev`.
@@ -31,45 +31,23 @@ To set up the project locally, follow these steps:
 
 #### Pagination for products
 
-2. **Main Section**: Display a paginated list of product in the main section.
+2. **Main Section**: Displayed a paginated list of product in the main section.
 
 #### Product Sorting and Filtering
 
-3. **Product Sorting**: Implement options for sorting products based on price, creation date (created_at), and rating.
-4. **Brand Filter**: Enable product filtering by the chosen brand and emphasize the selected brands within the respective tab.
-5. **Category Filter**: Allow product filtering by the selected category and highlight the chosen category within its designated tab.
-6. **Price Range Filter**: Provide the ability to filter products based on the selected price range and highlight the chosen range within its dedicated tab.
-7. **Occasion Filter**: Enable product filtering based on the selected occasion and highlight the chosen occasion within its specific tab.
-8. **Discount Filter**: Implement product filtering based on the selected discount and highlight the chosen discount within its dedicated tab.
-9. **URL Parameters**: Store all filter and sort options in the URL parameters to replicate the user's browsing state when sharing URLs.
+3. **Product Sorting**: Implemented options for sorting products based on price, creation date (created_at), and rating.
+4. **Brand Filter**: Enabled product filtering by the chosen brand and emphasize the selected brands within the respective tab.
+5. **Category Filter**: Allowed product filtering by the selected category and highlight the chosen category within its designated tab.
+6. **Price Range Filter**: Provided the ability to filter products based on the selected price range and highlight the chosen range within its dedicated tab.
+7. **Occasion Filter**: Enabled product filtering based on the selected occasion and highlight the chosen occasion within its specific tab.
+8. **Discount Filter**: Implemented product filtering based on the selected discount and highlight the chosen discount within its dedicated tab.
+9. **URL Parameters**: Stored all filter and sort options in the URL parameters to replicate the user's browsing state when sharing URLs.
 
 #### Product Operations (Create/Edit/Delete)
 
-10. **Create Product**: Allow users to crete product.
-11. **Edit Product**: Allow users to modify specific product details.
-12. **Delete Product**: Provide the functionality to remove a particular product from the list.
+10. **Create Product**: Allowed the users to crete product along with the image by using cloudinary.
+11. **Edit Product**: Allowed the users to modify specific product details along with the image by using cloudinary.
+12. **Delete Product**: Provided the functionality to remove a particular product from the list.
 
-### Delivery Expectations
 
-1. **Code Repository**: Push the code to a public GitHub repository.
-2. **Documentation**: Provide well-documented code with a comprehensive README file.
-3. **Setup Instructions**: Include clear instructions on how to set up and run the project.
-4. **Application Demo**: Record a video demonstrating the application's functionality.
 
-### Evaluation Criteria
-
-Candidates will be evaluated based on the following criteria:
-
-1. **Functionality**: Does the application meet all specified requirements?
-2. **Code Quality**: Is the code well-structured, readable, and maintainable?
-3. **Documentation**: Is the codebase well-documented with clear instructions?
-4. **User Experience**: Does the application provide a smooth and intuitive user experience?
-5. **Technical Proficiency**: How effectively does the candidate utilize relevant technologies and APIs?
-6. **Delivery Quality**: Does the candidate deliver all expected deliverables with high quality?
-
-## Conclusion
-
-We're thrilled to witness your skills in action as you tackle this project. Your dedication and creativity will play a vital role in crafting a seamless user experience. Best of luck, and we're excited to see your contributions!
-=======
-# mern-stack-machine-task
->>>>>>> 73a2a4753fd068d09cc3f31f49f512a688bfd41d
