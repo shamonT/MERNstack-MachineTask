@@ -27,7 +27,7 @@ export async function getProducts(
     let sortField = 'created_at';  
     let sortOrder = 'asc';       
 
-  
+  //Checking  the field and order  and storing in the above fields
     if (sortBy) {
       const [field, order] = sortBy.split('-');
       if (['price', 'created_at', 'rating'].includes(field)) {
@@ -37,7 +37,7 @@ export async function getProducts(
         sortOrder = order;
       }
     }
-
+//
     let query = db
     .selectFrom('products')
     .innerJoin('product_categories', 'products.id', 'product_categories.product_id') 
@@ -47,6 +47,7 @@ export async function getProducts(
     .offset((pageNo - 1) * pageSize)
     .limit(pageSize)
     .orderBy(sortField, sortOrder);
+   console.log(query,"query");
    
    if (categoryId) {
       
@@ -257,7 +258,7 @@ export async function addProduct(values) {
       })
       .execute(); 
 
-
+//fetching the id of current entry to add data into product categories table to make relation
     const data = await db
       .selectFrom('products')
       .select('id')
@@ -288,7 +289,7 @@ export async function addProduct(values) {
   }
 }
 
-
+//update functionality
 export async function updateProduct(values) {
   try {
    const oldPrice = parseFloat(values.values.old_price);
@@ -296,7 +297,7 @@ export async function updateProduct(values) {
      const price = oldPrice - (oldPrice * (discount / 100));
     
    
-     
+     //updating the values into the products table
     await db
       .updateTable('products')
       .set({
@@ -317,13 +318,13 @@ export async function updateProduct(values) {
       .where('id', '=', values.id)
       .execute();
 
-    
+    //deleting the preexisting product_categories row related to the product
     await db
       .deleteFrom('product_categories')
       .where('product_id', '=', values.id)
       .execute();
 
-
+//adding a new product_categories row related to the product
     if (values.values.categories) {
       await db
         .insertInto('product_categories')
